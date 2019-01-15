@@ -36,10 +36,21 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	<bean id="kenny" class="com.springinaction.springidol.Instrumentalist"     
 	p:song = "Jingle Bells"     
 	p:instrument-ref = "saxophone" />
-
-
 	
 	<bean id="piano"     
 	class="com.springinaction.springidol.Piano" />
+	
+	<bean id="hank"
+	class="com.springinaction.springidol.OneManBand">
+	<property name="instruments">  
+	<map>  
+    <entry key="PIANO" value-ref="piano" />
+      <entry key="SAXOPHONE" value-ref="saxophone" /> 
+	  </map> 
+	  </property> 
+	  </bean>
+
+	
+	
     
 </beans>
