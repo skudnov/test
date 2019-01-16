@@ -5,7 +5,7 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class MainClass {
   public static void main(String[] args) {
 		 ApplicationContext context = new FileSystemXmlApplicationContext("resources//spring-idol.xml");
-		Performer performer = (Performer) context.getBean("hank");
+		Performer performer = (Performer) context.getBean("stevie");
 		performer.perform();
 	}
 }

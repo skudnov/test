@@ -6,7 +6,7 @@ public class OneManBand implements Performer {
 public OneManBand() {}
     public void perform() {    
     for (String key : instruments.keySet()) {  
-	System.out.print(key + " : ");     
+	System.out.print(key + "  ");     
 	Instrument instrument = instruments.get(key); 
 	instrument.play();       
 	}  
