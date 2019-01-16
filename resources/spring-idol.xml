@@ -97,10 +97,8 @@ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 	  
 	  <bean id="tigerReplacer"   
 	  class="com.springinaction.springidol.TigerReplacer" />
-
-
-
+	   
 	
-	
-    
+	  
+	  
 </beans>
